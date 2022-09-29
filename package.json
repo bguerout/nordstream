@@ -1,0 +1,47 @@
+{
+  "name": "nordstream",
+  "version": "0.0.1",
+  "description": "Fixed by oleoduc",
+  "engines": {
+    "node": ">= 10"
+  },
+  "keywords": [
+    "stream",
+    "streams",
+    "pipeline",
+    "pipe",
+    "transform",
+    "parallel"
+  ],
+  "main": "./index.js",
+  "scripts": {
+    "hooks": "git config core.hooksPath .tools/git-hooks && chmod +x .tools/git-hooks/*",
+    "test": "",
+    "lint": "eslint index.js ",
+    "release": "bash .tools/release.sh main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bguerout/nordstream.git"
+  },
+  "author": "Benoît Guérout",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bguerout/nordstream/issues"
+  },
+  "homepage": "https://github.com/bguerout/nordstream#readme",
+  "dependencies": {
+    "oleoduc": "0.7.0"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-mocha": "9.0.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.6.2"
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}
